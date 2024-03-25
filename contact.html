@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Civil Engineering | Contact Us</title>
+    <meta name="description" content="JM Civil Engineering | Contact Us">
+    <meta property="og:title" content="JM Civil Engineering" />
+    <meta property="og:type" content="logo-icon.webp" />
+    <meta property="og:url" content="https://jmcivileng.com/" />
+    <meta property="og:image"
+        content="https://jmcivileng.com/wp-content/uploads/2021/10/JM_Civil_Teal_web_300x300-01.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/common/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/common-styles.css">
+    <link rel="stylesheet" href="styles/contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header>
+        <section class="navsec">
+            </div>
+            <div>
+                <a href="index.html"><img src="images/common/logo-icon.webp" alt="JmCivilEng Logo" height="100"
+                        width="100" class="iconlogo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropbtn">SERVICES</a>
+                        <div class="dropdown-content">
+                            <a href="construction-management.html">CONSTRUCTION MANAGEMENT</a>
+                            <hr>
+                            <a href="civil-eng.html">CIVIL ENGINEERING</a>
+                            <hr>
+                            <a href="development.html">DEVELOPMENT</a>
+                            <hr>
+                            <a href="survey.html">LAND SURVEY</a>
+                            <hr>
+                            <a href="planning.html">PLANNING</a>
+                        </div>
+                    </li>-->
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="locations.html">LOCATIONS</a></li>
+                    <li><a href="#contact" class="active">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="menu-toggle">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </header>
+    <section id="img-Header" style="background-image: url(images/contact/contactheader2.png);">
+        <div>
+            <p>CONTACT US</p>
+            <img id="header-border" src="images/common/headerbordertest.png">
+        </div>
+    </section>
+    <section id="header-info">
+        <div>
+            <h3>GET IN TOUCH</h3>
+            <p>Have questions, feedback, or just want to say hello? We'd love to hear from you! Feel free to reach out
+                using the contact form below, and our team will get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <section class="contact-form-container">
+        <div class="contact-form">
+            <form id="contactForm" netlify>
+                <label for="name" idd="namelabel">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" id="emaillabel">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="company" id="companylabel">Company</label>
+                <input type="text" id="company" name="company">
+
+                <label for="phone" id="phonelabel">Phone</label>
+                <input type="phone" id="phone" name="phone" required>
+
+                <label for="message" id="messagelabel">Message</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+
+                <!-- Add reCAPTCHA here 
+                <div class="g-recaptcha" data-sitekey="6LdDpVspAAAAAIlO_DV0fAE-MoXajvnZo8qJAGZs"></div>
+                -->
+
+                <button type="button" class="submit_button" id="submitBtn">Submit</button>
+                <div id="successBtnMessage" class="hidden">Form submitted successfully!</div>
+            </form>
+            <div class="card">
+                <hr>
+                <h2 style="margin-bottom: -5px;">CALL US</h2>
+                <div class="body-text">See if a career in civil engineering is right for you.</div>
+                <img src="images/common/contacticon.webp" alt="Team Icon" class="label" width="100" height="100">
+                <div class="text1">
+                    <div class="text-content">
+                        <div class="body-number"><a style="text-decoration: none;" id="phoneNumber"
+                                href="tel:(214) 491-1830">+1 (877) 277-9139</a>
+                        </div>
+                        <div class="body-email"><a href=mailto:info@jmcivileng.com?cc=info@jmcivileng.com”
+                                id="emailCard">info@jmcivileng.com</a></div>
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact-extra">
+        <div id="extra1">
+            <h3>Locations</h3>
+            <p>We have locations throughout the United States.</p>
+            <a href="locations.html">VIEW LOCATIONS</a>
+        </div>
+        <div id="extra2">
+            <h3>Careers at JM Civil Engineering</h3>
+            <p>Discover what it's like to work with us.</p>
+            <a href="careers.html">VIEW CAREERS</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <a href="index.html"><img src="images/common/logo-icon.webp" class="footer-logo"
+                                    alt="JM Civil Engineering"></a>
+                            <p>1101 Central Expressway South,<br />Allen, Texas 75013<br /><br /><a
+                                    href="tel:(877) 277-9139" id="footerNumber">+1 (877) 277-9139</a></p>
+
+                        </div>
+
+                        <div class="footer-menu">
+                            <a href="contact.html">Contact Us</a><br /><a href="careers.html">Work With Us</a>
+                        </div>
+
+                        <div class="social-items">
+                            <!--<a href="https://www.facebook.com/JMCivilEng" target="_blank" class="social-icon"><img
+                                    src="images/common/icon-facebook.png" alt="Facebook"></a>
+                            <a href="https://www.youtube.com/JMCivilEngineering" target="_blank"
+                                class="social-icon"><img src="images/common/icon-youtube.png" alt="YouTube"></a>-->
+                            <a href="https://www.linkedin.com/company/jm-civil-engineering" class="social-icon"><img
+                                    src="images/common/icon-linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="scripts/common.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(document).ready(function () {
+        $('#submitBtn').on('click', function () {
+            // Perform AJAX request
+            $.ajax({
+                type: 'POST',
+                url: 'scripts/contact-form.php',
+                data: $('#contactForm').serialize(), // Serialize form data
+                success: function (response) {
+                    // Display success message or handle the response
+                    //alert('Form submitted successfully!');
+                    $('#successBtnMessage').removeClass('hidden');
+                },
+                error: function (error) {
+                    // Handle errors
+                    console.error('Error submitting form:', error);
+                    $('#successBtnMessage').removeClass('hidden');
+                    //alert('Form submitted successfully!');
+                }
+            });
+        });
+    });
+</script>
+
+
+</html>

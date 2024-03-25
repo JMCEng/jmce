@@ -1,0 +1,90 @@
+#civil-eng-Header {
+    position: relative;
+    text-align: center;
+    padding: 10vh 0;
+    height: 5vh;
+    font-family: var(--primary-font), Arial;
+    font-size: 45px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-top: 1em;
+}
+
+
+
+#civil-eng-section2 {
+    max-width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.service {
+  border: 0px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+  overflow: visible; /* Ensure the description content can overflow */
+}
+
+.service h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--header-color);
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.service:hover h2 {
+  color: var(--secondary-color); /* Change color on hover */
+}
+
+
+.service p {
+  font-size: 16px;
+  color: var(--paragraph-color);
+  position: absolute;
+  /*top: 100%; /* Position below the header */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure content appears above other elements */
+  opacity: 0; /* Initially set opacity to 0 */
+  display: none;
+  transition: opacity 0.3s ease; /* Smooth transition effect for opacity */
+}
+
+.service.active p {
+  display: block;
+  opacity: 1; /* Change opacity to fully visible */
+  border-top: 2px solid var(--secondary-color);
+}
+
+
+
+hr {
+    @media screen and (min-width: 1336px) {
+        display: none;
+    }
+}
+@media screen and (max-width:1336px) {
+    #civil-eng-section2 {
+        max-width: 100%;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

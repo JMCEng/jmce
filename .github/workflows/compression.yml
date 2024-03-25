@@ -1,0 +1,19 @@
+name: Compress Files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Compress files
+        run: |
+          find . -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -kf {} \;
+        # Add other steps if needed

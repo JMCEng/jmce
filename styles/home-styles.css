@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:900');
+
+body {
+    padding: 0;
+}
+
+/* BODY */
+.bodybackground {
+    /*background-image: url(../images/home/stockbackground.webp);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* This ensures the background stays fixed while scrolling */
+    background-position: center;
+    /* Center the background image */
+}
+
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity .4s ease-in-out
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity .5s ease-in-out
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/home/carouselborder1.png');
+    /* Replace with your overlay image */
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    /* Adjust the opacity as needed */
+}
+
+.carousel-text {
+    position: absolute;
+    top: 38.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    font-family: var(--primary-font), Arial;
+}
+
+.carousel-text h1 {
+    color: var(--primary-color);
+    font-size: 4.20em;
+    text-shadow: 1px 1px 8px #000;
+    font-weight: 500;
+}
+
+.mainimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    display: none
+}
+
+#carouselSection {
+    padding: 0;
+    text-align: center
+}
+
+.carousel-separator {
+    height: 50px;
+}
+
+
+
+
+
+
+/* SECTION 1 */
+#Section1 {
+    background-color: var(--primary-color);
+    height: auto;
+    padding: 6vh 20vw;
+
+}
+
+#Section1 h1 {
+    color: var(--secondary-color);
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin: 0 auto 1em;
+}
+
+#Section1 p {
+    font-size: var(--paragraph-size);
+}
+
+
+
+
+
+
+
+/* SECTION 2 */
+#Section2 {
+    background-color: var(--highlight-color);
+    height: auto;
+    padding: 6vh 20vw;
+}
+
+#Section2 h1 {
+    color: var(--secondary-color);
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin: 0 auto 1em;
+}
+
+#Section2 p {
+    font-size: var(--paragraph-size);
+}
+
+#Section2 button {
+    padding: .5em 0;
+    background-color: var(--header-color);
+    border-width: 0px;
+}
+
+#Section2 a {
+    color: var(--header-color);
+    font-weight: var(--header-weight);
+    
+}
+#Section2 a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* SECTION 3*/
+#Section3 {
+    background-color: var(--header-color);
+    height: auto;
+    padding: 6vh 20vw;
+}
+
+#Section3 h1 {
+    color: var(--primary-color);
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin: 0 auto 1em;
+}
+
+#Section3 p {
+    color: var(--primary-color);
+    font-size: var(--paragraph-size);
+}
+
+#Section3 button {
+    padding: .5em 0;
+    background-color: var(--primary-color);
+    border-width: 0px;
+}
+
+#Section3 a {
+    color: var(--primary-color);
+    font-weight: var(--header-weight);
+    text-decoration: none;
+}
+#Section3 a:hover {
+    text-decoration: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    figcaption {
+        transform: translate3d(0, 2rem, 0);
+    }
+
+    figure::after {
+        border-radius: 50%;
+        opacity: 1;
+        transform: scale(0);
+        transition: transform 900ms;
+    }
+
+    .gallery a:is(:hover, :focus) figure::after {
+        transform: scale(2.5);
+    }
+
+    .gallery a:is(:hover, :focus) figcaption {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 600ms 400ms, transform 600ms 400ms;
+    }
+
+    .gallery a:is(:hover, :focus) img {
+        transform: scale(1.2);
+    }
+}
+
+/* MOBILE STYLES */
+@media (max-width: 1337px) {
+    .bodybackground {
+        padding: 0;
+    }
+
+    .carousel-text h1 {
+        font-size: 3.20em;
+        top: 45%;
+    }
+
+    .card {
+        margin: 50px 0;
+    }
+
+    .card h2 {
+        padding-top: 0px;
+    }
+
+    hr {
+        margin-bottom: 150px;
+    }
+
+    #Section1 {
+        display: block;
+        height: auto;
+        padding: 5vh 10vw;
+
+    }
+
+    #Section2 {
+        padding: 5vh 10vw;
+    }
+
+    #Section3 {
+        padding: 5vh 10vw;
+    }
+
+    #Section4 {
+        text-align: center;
+        padding: 5vh 10vw;
+    }
+
+    #Section5 {
+        padding: 5vh 10vw;
+    }
+
+    #Section6 {
+        text-align: center;
+        padding: 5vh 10vw;
+    }
+}
