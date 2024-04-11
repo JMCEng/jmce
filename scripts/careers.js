@@ -1,4 +1,1 @@
-$('#carouselcareers').carousel({
-    interval: 5000
-  });
-  
+$("#carouselcareers").carousel({interval:5e3});

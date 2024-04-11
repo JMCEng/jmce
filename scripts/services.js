@@ -1,15 +1,1 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const checkboxes = document.querySelectorAll('.toggleCheckbox');
-
-    checkboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-            const dropdown = checkbox.parentElement; // Get the parent li element
-
-            if (checkbox.checked) {
-                dropdown.style.maxHeight = '75px';
-            } else {
-                dropdown.style.maxHeight = 'none';
-            }
-        });
-    });
-});
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".toggleCheckbox");e.forEach(function(e){e.addEventListener("change",function(){let t=e.parentElement;e.checked?t.style.maxHeight="75px":t.style.maxHeight="none"})})});
